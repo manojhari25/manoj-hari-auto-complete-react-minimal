@@ -38,8 +38,6 @@ export default class AutoComplete extends React.Component {
       this.props.selecteGitHubUser(gitHubUsersList[selectedIndex])
     }
 
-
-
     this.setState({
       selectedIndex: selectedIndex
     })
@@ -66,7 +64,6 @@ export default class AutoComplete extends React.Component {
     });
     document.getElementById('autoComplete').scrollTop = 0;
   }
-
 
   render() {
     const { openAutoComplete, selectedIndex } = this.state;
